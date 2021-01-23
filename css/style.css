@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: gainsboro;
+    font-family: 'Poppins', sans-serif
+}
+section{
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+}
+main{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.sec-title{
+    color: gray;
+}
+.sec-photos , .sec-blogs, .courses{
+    display: grid;
+    place-items: center;
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+.sec-photos , .courses{
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+}
+.course img{
+    width: 250px;
+    height: 150px;
+}
+.sec-blogs{
+    grid-template-columns: repeat(2,1fr);
+}
+.photo img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.photo{
+    display: flex;
+    align-items: center;
+}
+.blog img{
+    height: 150px;
+    width: 250px;
+    margin-right: 10px ;
+  
+}
+.blog{
+    display: flex;
+}
+
+.filled{
+    color: yellow;
+    font-size: 0.8em;
+}
+.unfilled{
+    color: red;
+    font-size: 0.8em;
+}
+.course-details{
+    display: flex;
+}
+
+@media (max-width: 780px) {
+
+    .sec-photos{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sec-blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog{
+        display: block;
+    }
+    }
+
+}
+@media (max-width: 680px){
+    .sec-photos{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sec-blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    }
+
